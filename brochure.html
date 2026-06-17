@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>广师大AIGC职业技能培训招生简章（大折页10页版）</title>
+<style>
+/* ========== DESIGN SYSTEM ========== */
+:root {
+  --tq: #1A7B6B;       /* 松石绿 */
+  --tq-d: #116B5E;     /* 深松石绿 */
+  --gold: #C9A03D;     /* 暖金 */
+  --ivory: #F8F6F0;    /* 象牙白 */
+  --char: #2C2C2C;     /* 深炭灰 */
+  --red: #C63D2F;      /* 赤红 */
+  --lt-green: #E8F3F1; /* 浅绿 */
+  --lt-gold: #F5ECD7;  /* 浅金 */
+  --white: #FFFFFF;
+  --border: #D5CFC5;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: var(--char);
+  background: #E8E5DF;
+  line-height: 1.55;
+}
+
+/* ========== MASTER CONTAINER ========== */
+.brochure {
+  max-width: 1480px;
+  margin: 20px auto;
+  background: var(--white);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+}
+
+/* 5列布局 */
+.spread {
+  display: flex;
+  width: 100%;
+  min-height: 880px;
+  page-break-after: always;
+}
+
+.panel {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-right: 1px dashed #E0DBD5;
+  min-width: 0;
+}
+
+.panel:last-child { border-right: none; }
+
+/* ========== COMPONENTS ========== */
+.top-bar-tq {
+  background: var(--tq);
+  color: var(--white);
+  padding: 14px 16px;
+  text-align: center;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: 15pt;
+  letter-spacing: 3px;
+}
+
+.top-bar-gold {
+  background: var(--gold);
+  color: var(--white);
+  padding: 14px 16px;
+  text-align: center;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: 15pt;
+  letter-spacing: 3px;
+}
+
+.content {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub-title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 11.5pt;
+  color: var(--tq);
+  padding-left: 8px;
+  border-left: 3px solid var(--gold);
+  margin-top: 2px;
+}
+
+.sub-title-gold {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 11.5pt;
+  color: var(--gold);
+  padding-left: 8px;
+  border-left: 3px solid var(--tq);
+  margin-top: 2px;
+}
+
+.p-text {
+  font-size: 9pt;
+  color: var(--char);
+  line-height: 1.6;
+}
+
+.p-small {
+  font-size: 7.5pt;
+  color: #555;
+  line-height: 1.5;
+}
+
+.bullet-list {
+  list-style: none;
+  padding: 0;
+}
+
+.bullet-list li {
+  font-size: 9pt;
+  color: var(--char);
+  padding: 2px 0;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.bullet-list li .bi {
+  color: var(--gold);
+  flex-shrink: 0;
+  font-size: 9.5pt;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.data-card {
+  background: var(--lt-green);
+  border-radius: 3px;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.data-card .num {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  color: var(--tq);
+  display: block;
+  line-height: 1.1;
+}
+
+.data-card .lbl {
+  font-size: 7.5pt;
+  color: var(--char);
+  margin-top: 1px;
+}
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 7pt;
+}
+
+.tbl th {
+  background: var(--tq);
+  color: var(--white);
+  padding: 4px 5px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 7pt;
+}
+
+.tbl td {
+  padding: 3px 5px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+.tbl tr:nth-child(even) td {
+  background: #F5FAF8;
+}
+
+.job-tag {
+  background: var(--lt-gold);
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-size: 7.5pt;
+  color: var(--char);
+  border-left: 3px solid var(--gold);
+  margin-top: 2px;
+}
+
+.job-tag strong { color: var(--tq); }
+
+.info-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+}
+
+.info-tbl td {
+  padding: 5px 8px;
+  border: 1px solid var(--border);
+}
+
+.info-tbl td:first-child {
+  background: var(--lt-green);
+  font-weight: 600;
+  width: 30%;
+  color: var(--tq);
+}
+
+.promo-red {
+  background: var(--red);
+  color: var(--white);
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-size: 9pt;
+  line-height: 1.9;
+  font-weight: 600;
+}
+
+.emph-bar {
+  background: var(--tq);
+  color: var(--white);
+  text-align: center;
+  padding: 8px;
+  border-radius: 3px;
+  font-size: 10pt;
+  font-weight: 600;
+}
+
+.emph-bar .gold-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.timeline-row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 6px;
+}
+
+.timeline-row::before {
+  content: '';
+  position: absolute;
+  top: 6px; left: 7%; right: 7%;
+  height: 1.5px;
+  background: var(--gold);
+}
+
+.tl-step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-size: 8pt;
+  color: var(--char);
+}
+
+.tl-dot {
+  width: 8px; height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+  margin: 0 auto 3px;
+}
+
+.logo-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+}
+
+.logo-chip {
+  background: #E8E3D8;
+  color: #666;
+  padding: 3px 8px;
+  border-radius: 2px;
+  font-size: 7.5pt;
+  font-weight: 500;
+}
+
+.honor-cards {
+  display: flex;
+  gap: 6px;
+}
+
+.honor-card {
+  flex: 1;
+  background: var(--lt-green);
+  text-align: center;
+  padding: 10px 6px;
+  border-radius: 3px;
+}
+
+.honor-card .num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+}
+
+.honor-card .lbl {
+  font-size: 7pt;
+  color: var(--char);
+  margin-top: 2px;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.highlight-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.highlight-card .icon {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.highlight-card .title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 10pt;
+  color: var(--tq);
+  margin-bottom: 3px;
+}
+
+.highlight-card .desc {
+  font-size: 7pt;
+  color: #555;
+  line-height: 1.4;
+}
+
+.qa-item {
+  margin-bottom: 8px;
+}
+
+.qa-q {
+  font-weight: 700;
+  font-size: 9pt;
+  color: var(--tq);
+  margin-bottom: 2px;
+}
+
+.qa-a {
+  font-size: 8pt;
+  color: #555;
+  line-height: 1.5;
+  padding-left: 6px;
+  border-left: 2px solid var(--lt-green);
+}
+
+.flow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.flow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.flow-num {
+  width: 28px; height: 28px;
+  background: var(--tq);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12pt;
+  flex-shrink: 0;
+}
+
+.flow-num.gold {
+  background: var(--gold);
+}
+
+.flow-content {
+  flex: 1;
+}
+
+.flow-title {
+  font-weight: 700;
+  font-size: 9.5pt;
+  color: var(--tq);
+  margin-bottom: 1px;
+}
+
+.flow-desc {
+  font-size: 7.5pt;
+  color: #555;
+  line-height: 1.4;
+}
+
+.teacher-card {
+  background: var(--lt-green);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.teacher-avatar {
+  width: 40px; height: 40px;
+  background: var(--tq);
+  border-radius: 50%;
+  margin: 0 auto 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.teacher-name {
+  font-weight: 700;
+  font-size: 9.5pt;
+  color: var(--char);
+}
+
+.teacher-title {
+  font-size: 7.5pt;
+  color: #777;
+  margin-top: 2px;
+}
+
+.bottom-bar {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-size: 7pt;
+  color: #999;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.qr-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 8px 0;
+}
+
+.qr-box {
+  text-align: center;
+}
+
+.qr-img {
+  width: 58px; height: 58px;
+  background: #E8E3D8;
+  margin: 0 auto 4px;
+  border: 2px solid var(--tq);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6.5pt;
+  color: #999;
+}
+
+.qr-label {
+  font-size: 7.5pt;
+  color: var(--char);
+}
+
+.footer-legal {
+  text-align: center;
+  font-size: 6.5pt;
+  color: #999;
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+/* ========== PAGE 1: COVER ========== */
+.cover-page {
+  background: var(--ivory);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.cover-badge {
+  width: 80px; height: 80px;
+  margin-bottom: 12px;
+  background: transparent;
+}
+
+.cover-school {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 18pt;
+  letter-spacing: 3px;
+  color: var(--char);
+}
+
+.cover-school-en {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8pt;
+  letter-spacing: 1.5px;
+  color: #999;
+  margin-top: 3px;
+}
+
+.cover-divider {
+  width: 55%;
+  height: 1px;
+  background: var(--gold);
+  margin: 16px auto;
+  opacity: 0.4;
+}
+
+.cover-main-title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: 26pt;
+  color: var(--gold);
+  letter-spacing: 4px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.cover-sub {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 14pt;
+  color: var(--tq);
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.cover-tagline {
+  background: var(--tq-d);
+  color: var(--white);
+  padding: 6px 20px;
+  border-radius: 3px;
+  font-size: 9pt;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.cover-sell {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cover-sell-item {
+  flex: 1;
+  text-align: center;
+}
+
+.cover-sell-icon {
+  font-size: 22px;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.cover-sell-text {
+  font-size: 8.5pt;
+  color: #555;
+  line-height: 1.4;
+}
+
+.cover-footer {
+  font-size: 7.5pt;
+  color: #999;
+  line-height: 1.7;
+}
+
+.cover-footer strong {
+  color: var(--tq);
+  font-size: 9pt;
+}
+
+/* ========== PRINT ========== */
+@media print {
+  body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .brochure { max-width: 100%; margin: 0; box-shadow: none; }
+  .spread { min-height: auto; page-break-after: always; }
+  @page { size: A3 landscape; margin: 0; }
+}
+
+@media screen and (max-width: 1100px) {
+  .spread { flex-wrap: wrap; }
+  .panel { flex: 1 1 33%; min-width: 250px; }
+}
+</style>
+</head>
+<body>
+
+<div class="brochure">
+
+<!-- ===== ROW 1: P1(封面) + P2(学校实力) + P3(课程①+②) + P4(课程③+④) + P5(学习生活) ===== -->
+<div class="spread">
+
+  <!-- ===== P1: 封面 ===== -->
+  <div class="panel cover-page">
+    <div class="cover-badge"><img src="data:image/png;base64,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" alt="广师大校徽" style="width:80px;height:80px;object-fit:contain;"></div>
+    <div class="cover-school">广东技术师范大学</div>
+    <div class="cover-school-en">Guangdong Polytechnic Normal University</div>
+    <div class="cover-divider"></div>
+    <div class="cover-main-title">AIGC职业技能培训</div>
+    <div class="cover-sub">招 生 简 章</div>
+    <div class="cover-tagline">公办高校·权威认证 | 零基础入学·推荐就业</div>
+    <div class="cover-sell">
+      <div class="cover-sell-item">
+        <div class="cover-sell-icon">🎓</div>
+        <div class="cover-sell-text">学校背书<br>广师大结业证书<br>全省认可</div>
+      </div>
+      <div class="cover-sell-item">
+        <div class="cover-sell-icon">💻</div>
+        <div class="cover-sell-text">实战课程<br>企业真实项目<br>实战≥70%</div>
+      </div>
+      <div class="cover-sell-item">
+        <div class="cover-sell-icon">💼</div>
+        <div class="cover-sell-text">就业保障<br>100+合作企业<br>3000+名企内推</div>
+      </div>
+    </div>
+    <div class="cover-footer">
+      编制单位：广东技术师范大学 | 2026年6月<br>
+      扫码领取《AIGC就业前景报告》<br>
+      <strong>咨询电话：400-885-6216</strong>
+    </div>
+  </div>
+
+  <!-- ===== P2: 学校实力篇 ===== -->
+  <div class="panel" style="background:var(--ivory);">
+    <div class="top-bar-tq">底蕴深厚·值得信赖</div>
+    <div class="content">
+      <div class="sub-title">🏛️ 历史荣光</div>
+      <ul class="bullet-list">
+        <li><span class="bi">📜</span> 1957年建校，首任校长罗明</li>
+        <li><span class="bi">🏛️</span> 省属公办本科，硕士学位授予单位</li>
+        <li><span class="bi">🏆</span> 2025年获评"全国文明校园"</li>
+        <li><span class="bi">⭐</span> "全国毕业生就业典型经验高校"</li>
+      </ul>
+      
+      <div class="sub-title">📊 办学实力</div>
+      <div class="data-grid">
+        <div class="data-card"><span class="num">5</span><span class="lbl">个校区</span></div>
+        <div class="data-card"><span class="num">2500+</span><span class="lbl">余亩</span></div>
+        <div class="data-card"><span class="num">662</span><span class="lbl">正副高教师</span></div>
+        <div class="data-card"><span class="num">1132</span><span class="lbl">博士</span></div>
+        <div class="data-card"><span class="num">80+</span><span class="lbl">国家级省级一流专业</span></div>
+        <div class="data-card"><span class="num">15</span><span class="lbl">硕士学位授权点</span></div>
+        <div class="data-card"><span class="num">2.9万+</span><span class="lbl">全日制在校生</span></div>
+        <div class="data-card"><span class="num">5</span><span class="lbl">省级重点学科</span></div>
+      </div>
+      <p class="p-small">硕士学位授权点含6个一级学科硕士点、9个硕士专业学位授权点；省级重点学科含民族学、教育学、控制科学与工程等。</p>
+      
+      <div class="sub-title">🤝 产教融合</div>
+      <ul class="bullet-list">
+        <li><span class="bi">🏭</span> 省级以上产业学院<strong>8个</strong></li>
+        <li><span class="bi">🏫</span> 校外实践教学基地<strong>516个</strong></li>
+        <li><span class="bi">🔗</span> 与腾讯、华为、阿里巴巴等共建实训平台</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== P3: 课程体系① - 方向一+方向二 ===== -->
+  <div class="panel" style="background:var(--white);">
+    <div class="top-bar-gold">AIGC实战课程·学真本事</div>
+    <div class="content">
+      <div class="sub-title-gold">📦 方向一：AI电商运营</div>
+      <table class="tbl">
+        <tr><th>模块</th><th>核心内容</th><th>掌握工具</th></tr>
+        <tr><td>智能选品</td><td>AI市场分析、竞品洞察、爆品预测</td><td>DeepSeek、生意参谋AI版、通义千问</td></tr>
+        <tr><td>AI内容创作</td><td>商品标题、详情页文案、种草笔记、跨境翻译</td><td>ChatGPT、DeepSeek、Kimi、Claude</td></tr>
+        <tr><td>AI视觉营销</td><td>主图生成、场景图合成、海报设计、A/B测试素材</td><td>即梦AI、Midjourney、PS AI、通义万相</td></tr>
+        <tr><td>AI短视频</td><td>带货短视频、开箱测评、脚本生成</td><td>可灵AI、剪映AI、Runway、Pika</td></tr>
+        <tr><td>AI直播运营</td><td>直播脚本、数字人主播、智能互动、弹幕回复</td><td>可灵AI、青椒云、HeyGen、D-ID</td></tr>
+        <tr><td>AI数据分析</td><td>店铺诊断、ROI优化、趋势预测、自动化报表</td><td>AI生意管家、Excel AI、Power BI AI</td></tr>
+      </table>
+      <div class="job-tag"><strong>就业岗位：</strong>AI电商运营师、直播策划经理、跨境选品专家、数据分析师</div>
+      
+      <div class="sub-title-gold">🎨 方向二：AI视觉设计</div>
+      <table class="tbl">
+        <tr><th>模块</th><th>核心内容</th><th>掌握工具</th></tr>
+        <tr><td>AI绘图基础</td><td>提示词工程、风格控制、参数调优</td><td>Midjourney、ComfyUI、DALL-E3、Stable Diffusion</td></tr>
+        <tr><td>电商视觉设计</td><td>主图/详情页/海报/直通车图/钻展图</td><td>即梦AI、PS AI、通义万相、稿定AI</td></tr>
+        <tr><td>品牌视觉全案</td><td>Logo设计、VI系统、包装设计、IP形象</td><td>Midjourney、Illustrator AI、Recraft</td></tr>
+        <tr><td>UI/UX设计</td><td>图标生成、界面设计、交互原型、设计系统</td><td>Figma AI、即时AI、Framer AI</td></tr>
+        <tr><td>三维视觉</td><td>产品建模、场景渲染、虚拟展厅、动效设计</td><td>C4D+AI、Blender+AI、Tripo 3D、MeshyAI</td></tr>
+        <tr><td>影视后期</td><td>AI调色、特效合成、动态海报、MG动画</td><td>剪映AI、After Effects AI、Runway</td></tr>
+      </table>
+      <div class="job-tag"><strong>就业岗位：</strong>AI视觉设计师、品牌视觉顾问、UI设计师、三维设计师</div>
+    </div>
+  </div>
+
+  <!-- ===== P4: 课程体系② - 方向三+方向四 ===== -->
+  <div class="panel" style="background:var(--white);">
+    <div class="top-bar-gold">AIGC实战课程·学真本事</div>
+    <div class="content">
+      <div class="sub-title-gold">🎬 方向三：AI短视频与漫剧创作</div>
+      <table class="tbl">
+        <tr><th>模块</th><th>核心内容</th><th>掌握工具</th></tr>
+        <tr><td>剧本创作</td><td>AI选题挖掘、脚本生成、分镜设计、角色设定</td><td>DeepSeek、Kimi、ChatGPT</td></tr>
+        <tr><td>AI视频生成</td><td>文生视频、图生视频、首尾帧控制、运动笔刷</td><td>可灵AI、即梦AI、Runway、Pika、Vidu</td></tr>
+        <tr><td>AI漫剧制作</td><td>AI漫剧、动态漫画、角色一致性、多格叙事</td><td>Stable Diffusion、ComfyUI、Midjourney</td></tr>
+        <tr><td>AI虚拟人</td><td>数字人播报、虚拟主播、口型同步、直播推流</td><td>HeyGen、D-ID、青椒云、OBS</td></tr>
+        <tr><td>AI剪辑与后期</td><td>智能剪辑、字幕生成、配音配乐、特效转场</td><td>剪映AI、CapCut、Premiere AI</td></tr>
+        <tr><td>AI音乐音效</td><td>背景音乐生成、音效制作、人声克隆</td><td>Suno、Udio、ElevenLabs</td></tr>
+      </table>
+      <div class="job-tag"><strong>就业岗位：</strong>短视频剪辑师、AI动画师、漫剧创作者、数字人运营、短剧导演</div>
+      
+      <div class="sub-title-gold">📋 方向四：AI智能办公</div>
+      <table class="tbl">
+        <tr><th>模块</th><th>核心内容</th><th>掌握工具</th></tr>
+        <tr><td>AI文档处理</td><td>周报/总结/方案/合同自动生成</td><td>DeepSeek、Kimi、ChatGPT、文心一言</td></tr>
+        <tr><td>AI幻灯片</td><td>PPT大纲生成、排版美化、动画设计</td><td>Gamma、美图AI PPT、WPS AI</td></tr>
+        <tr><td>AI数据分析</td><td>报表生成、趋势预测、可视化看板</td><td>AI+Excel、Power BI AI、飞书多维表格</td></tr>
+        <tr><td>AI会议助手</td><td>会议纪要、任务提取、日程规划、智能提醒</td><td>飞书AI、钉钉AI、腾讯会议AI</td></tr>
+        <tr><td>AI邮件/沟通</td><td>商务邮件、客户沟通、文案润色、多语言翻译</td><td>ChatGPT、通义千问、Claude</td></tr>
+        <tr><td>自动化工作流</td><td>RPA机器人、智能体搭建、流程自动化、日报推送</td><td>钉钉AI、Dify、n8n、影刀RPA</td></tr>
+      </table>
+      <div class="job-tag"><strong>就业岗位：</strong>智能办公专员、数据分析师、行政主管、运营助理、AI训练师</div>
+      
+      <div style="background:var(--lt-green); border-radius:4px; padding:8px; margin-top:2px;">
+        <div class="p-text" style="font-weight:700; color:var(--tq); margin-bottom:3px;">✅ 课程特色</div>
+        <div class="p-small">零基础可学·小班教学 | 实战≥70%·企业真实项目</div>
+        <div class="p-small">广师大结业证书+职业技能等级证书(人社/工信部)</div>
+        <div class="p-small">结业即推荐就业·优秀者可申请创业基金</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== P5: 学习生活 ===== -->
+  <div class="panel" style="background:var(--ivory);">
+    <div class="top-bar-tq">校内学习·安心无忧</div>
+    <div class="content">
+      <div class="sub-title">🏫 学习环境</div>
+      <div class="data-grid">
+        <div class="data-card"><span class="lbl">🖥️ 多媒体教室</span></div>
+        <div class="data-card"><span class="lbl">💻 计算机机房</span></div>
+        <div class="data-card"><span class="lbl">🏠 学生宿舍</span></div>
+        <div class="data-card"><span class="lbl">🍽️ 校内食堂</span></div>
+        <div class="data-card"><span class="lbl">📚 图书馆</span></div>
+        <div class="data-card"><span class="lbl">⚽ 运动场</span></div>
+      </div>
+      
+      <div class="sub-title">🛡️ 服务保障</div>
+      <div class="data-grid">
+        <div class="data-card"><span class="lbl">👩‍🏫 专职班主任</span></div>
+        <div class="data-card"><span class="lbl">🔒 24小时安保</span></div>
+        <div class="data-card"><span class="lbl">🛡️ 学员意外保险</span></div>
+        <div class="data-card"><span class="lbl">💼 就业跟踪服务</span></div>
+      </div>
+      
+      <div class="emph-bar" style="margin-top:4px;">
+        <div>就业保障</div>
+        <div class="gold-num">100+合作企业 | 3000+名企内推</div>
+      </div>
+      
+      <div class="sub-title">📋 就业服务流程</div>
+      <div class="timeline-row">
+        <div class="tl-step"><div class="tl-dot"></div>简历优化</div>
+        <div class="tl-step"><div class="tl-dot"></div>模拟面试</div>
+        <div class="tl-step"><div class="tl-dot"></div>名企内推</div>
+        <div class="tl-step"><div class="tl-dot"></div>持续跟踪</div>
+        <div class="tl-step"><div class="tl-dot"></div>3年免费<br>技能升级</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== ROW 2: P6(就业保障) + P7(课程亮点) + P8(学员服务) + P9(师资Q&A) + P10(封底) ===== -->
+<div class="spread">
+
+  <!-- ===== P6: 就业保障 ===== -->
+  <div class="panel" style="background:var(--ivory);">
+    <div class="top-bar-tq">就业保障·前程无忧</div>
+    <div class="content">
+      <div class="sub-title">🏢 合作企业（部分）</div>
+      <div class="logo-wall">
+        <span class="logo-chip">腾讯</span>
+        <span class="logo-chip">阿里巴巴</span>
+        <span class="logo-chip">字节跳动</span>
+        <span class="logo-chip">唯品会</span>
+        <span class="logo-chip">京东</span>
+        <span class="logo-chip">华为</span>
+        <span class="logo-chip">小米</span>
+        <span class="logo-chip">科大讯飞</span>
+        <span class="logo-chip">网易</span>
+        <span class="logo-chip">拼多多</span>
+        <span class="logo-chip">美的</span>
+        <span class="logo-chip">格力</span>
+      </div>
+      
+      <div class="sub-title">🏅 权威荣誉</div>
+      <div class="honor-cards">
+        <div class="honor-card">
+          <span class="num">⭐</span>
+          <span class="lbl">全国毕业生就业典型经验高校</span>
+        </div>
+        <div class="honor-card">
+          <span class="num">8</span>
+          <span class="lbl">省级以上产业学院</span>
+        </div>
+        <div class="honor-card">
+          <span class="num">516</span>
+          <span class="lbl">校外实践基地</span>
+        </div>
+      </div>
+      
+      <div class="sub-title">📊 就业数据</div>
+      <div class="data-grid">
+        <div class="data-card"><span class="num">98%</span><span class="lbl">学员满意度</span></div>
+        <div class="data-card"><span class="num">95%+</span><span class="lbl">就业率</span></div>
+        <div class="data-card"><span class="num">8K-15K</span><span class="lbl">平均起薪(元/月)</span></div>
+        <div class="data-card"><span class="num">3000+</span><span class="lbl">名企内推名额</span></div>
+      </div>
+      
+      <div class="sub-title">📷 校园实景</div>
+      <div class="data-grid">
+        <div class="data-card" style="height:45px; display:flex; align-items:center; justify-content:center; color:#999; font-size:7pt;">📷 广师大校门</div>
+        <div class="data-card" style="height:45px; display:flex; align-items:center; justify-content:center; color:#999; font-size:7pt;">📷 多媒体教室</div>
+        <div class="data-card" style="height:45px; display:flex; align-items:center; justify-content:center; color:#999; font-size:7pt;">📷 学生宿舍</div>
+        <div class="data-card" style="height:45px; display:flex; align-items:center; justify-content:center; color:#999; font-size:7pt;">📷 图书馆</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== P7: 课程亮点 ===== -->
+  <div class="panel" style="background:var(--white);">
+    <div class="top-bar-gold">课程亮点·核心优势</div>
+    <div class="content">
+      <div class="sub-title-gold">🎯 四大方向优势对比</div>
+      <table class="tbl">
+        <tr><th>方向</th><th>适合人群</th><th>核心技能</th><th>就业薪资</th></tr>
+        <tr><td>AI电商运营</td><td>想入行电商/转行者</td><td>选品+内容+直播</td><td>8K-20K</td></tr>
+        <tr><td>AI视觉设计</td><td>设计爱好者/美工</td><td>绘图+品牌+UI</td><td>10K-25K</td></tr>
+        <tr><td>AI短视频漫剧</td><td>视频创作者/自媒体</td><td>视频+漫剧+虚拟人</td><td>8K-30K</td></tr>
+        <tr><td>AI智能办公</td><td>职场白领/行政人员</td><td>文档+数据+自动化</td><td>7K-15K</td></tr>
+      </table>
+      
+      <div class="sub-title-gold">🛠️ 工具矩阵</div>
+      <div class="highlight-grid">
+        <div class="highlight-card">
+          <div class="icon">🤖</div>
+          <div class="title">大语言模型</div>
+          <div class="desc">DeepSeek · ChatGPT · Kimi · 文心一言 · 通义千问 · Claude</div>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">🎨</div>
+          <div class="title">AI绘图</div>
+          <div class="desc">Midjourney · ComfyUI · DALL-E3 · Stable Diffusion · 即梦AI</div>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">🎬</div>
+          <div class="title">AI视频</div>
+          <div class="desc">可灵AI · Runway · Pika · Vidu · 剪映AI · CapCut</div>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">📊</div>
+          <div class="title">AI办公</div>
+          <div class="desc">WPS AI · Power BI · 飞书AI · 钉钉AI · Dify · n8n</div>
+        </div>
+      </div>
+      
+      <div style="background:var(--lt-gold); border-radius:4px; padding:8px; text-align:center; margin-top:4px;">
+        <span class="p-text" style="font-weight:700; color:var(--tq);">🔥 学完即用 · 结业即就业 · 证书全国认可</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== P8: 学员服务 ===== -->
+  <div class="panel" style="background:var(--ivory);">
+    <div class="top-bar-tq">学员服务·全程护航</div>
+    <div class="content">
+      <div class="sub-title">🗺️ 从入学到就业全流程</div>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-num">1</div>
+          <div class="flow-content">
+            <div class="flow-title">📝 报名入学</div>
+            <div class="flow-desc">提交资料 → 入学测评 → 签订协议 → 分班排课</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num gold">2</div>
+          <div class="flow-content">
+            <div class="flow-title">📚 系统学习</div>
+            <div class="flow-desc">理论精讲(30%) + 项目实战(70%) · 小班教学 · 专职班主任全程管理</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">3</div>
+          <div class="flow-content">
+            <div class="flow-title">📜 考证认证</div>
+            <div class="flow-desc">广师大结业证书 + 职业技能等级证书(人社/工信部) · 全国通用</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num gold">4</div>
+          <div class="flow-content">
+            <div class="flow-title">💼 就业推荐</div>
+            <div class="flow-desc">简历优化 → 模拟面试 → 名企内推 → 持续跟踪 · 3年免费技能升级</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub-title">📅 学习时间安排</div>
+      <table class="tbl">
+        <tr><th>阶段</th><th>时长</th><th>内容</th></tr>
+        <tr><td>基础阶段</td><td>2周</td><td>AI工具入门、提示词工程、行业认知</td></tr>
+        <tr><td>专业阶段</td><td>4周</td><td>所选方向深度技能训练、项目实操</td></tr>
+        <tr><td>实战阶段</td><td>2周</td><td>企业真实项目、团队协作、作品集打造</td></tr>
+        <tr><td>就业阶段</td><td>1周</td><td>简历辅导、模拟面试、名企内推</td></tr>
+      </table>
+      <p class="p-small">总学时：9周(约2个月) · 全日制/周末班可选</p>
+    </div>
+  </div>
+
+  <!-- ===== P9: 师资力量 + Q&A ===== -->
+  <div class="panel" style="background:var(--white);">
+    <div class="top-bar-tq">名师领航·答疑解惑</div>
+    <div class="content">
+      <div class="sub-title">👨‍🏫 师资力量</div>
+      <div class="data-grid">
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍🏫</div>
+          <div class="teacher-name">张教授</div>
+          <div class="teacher-title">AI视觉设计导师<br>15年设计经验</div>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍💼</div>
+          <div class="teacher-name">李老师</div>
+          <div class="teacher-title">电商运营导师<br>前阿里运营总监</div>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👨‍💻</div>
+          <div class="teacher-name">王工</div>
+          <div class="teacher-title">AI办公导师<br>微软认证专家</div>
+        </div>
+        <div class="teacher-card">
+          <div class="teacher-avatar">👩‍🎨</div>
+          <div class="teacher-name">陈导</div>
+          <div class="teacher-title">短视频导师<br>千万粉丝操盘手</div>
+        </div>
+      </div>
+      
+      <div class="sub-title">❓ 常见问答</div>
+      <div class="qa-item">
+        <div class="qa-q">Q: 零基础能学会吗？</div>
+        <div class="qa-a">完全可以！课程从基础工具操作开始，循序渐进。70%以上时间为实战练习，老师手把手教学，确保每位学员都能掌握。</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">Q: 结业证书含金量如何？</div>
+        <div class="qa-a">广师大颁发的结业证书全省认可，同时可考取人社部/工信部职业技能等级证书，全国通用，求职升职有保障。</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">Q: 就业有保障吗？</div>
+        <div class="qa-a">100+合作企业、3000+名企内推名额。结业即推荐就业，提供3年免费技能升级服务，确保职业持续发展。</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">Q: 可以试听吗？</div>
+        <div class="qa-a">欢迎预约到校参观试听！拨打400-885-6216或添加微信13927030319预约即可。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== P10: 封底 ===== -->
+  <div class="panel" style="background:var(--ivory);">
+    <div class="top-bar-gold">现在报名·抢占AI高薪赛道</div>
+    <div class="content">
+      <div class="sub-title-gold">📝 报名信息</div>
+      <table class="info-tbl">
+        <tr><td>招生对象</td><td>中专/高中及以上学历（含大专、本科在校生及毕业生），社会人员，应往届毕业生均可报名</td></tr>
+        <tr><td>开班时间</td><td>每月滚动开班（具体日期请咨询）</td></tr>
+        <tr><td>上课地点</td><td>广师大北校区（广州）</td></tr>
+        <tr><td>住宿</td><td>校内学生宿舍</td></tr>
+        <tr><td>餐饮</td><td>校内食堂</td></tr>
+      </table>
+      
+      <div class="promo-red">
+        🔥 前30名报名立减500元<br>
+        👥 团报2人以上各减300元<br>
+        🎓 凭学生证享9折
+      </div>
+      
+      <div class="p-text" style="text-align:center; line-height:2;">
+        📞 咨询电话：<strong>400-885-6216</strong><br>
+        💬 咨询微信：<strong>13927030319</strong><br>
+        📍 现场咨询：广州市越秀区矿泉街道广园西路183号<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;广师大北校区综合楼三楼
+      </div>
+      
+      <div class="qr-row">
+        <div class="qr-box">
+          <div class="qr-img">📱 公众号<br>二维码</div>
+          <div class="qr-label">扫码关注公众号</div>
+        </div>
+        <div class="qr-box">
+          <div class="qr-img">💬 老师<br>二维码</div>
+          <div class="qr-label">扫码添加老师微信</div>
+        </div>
+      </div>
+      
+      <div class="footer-legal">
+        <strong>广东技术师范大学主办</strong><br>
+        官网：www.gpnu.edu.cn<br>
+        本简章最终解释权归广师大所有<br>
+        编制日期：2026年6月
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>

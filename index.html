@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>广师大AIGC职业技能培训 · 招生简章</title>
+<style>
+:root {
+  --tq: #1A7B6B;
+  --gold: #C9A03D;
+  --ivory: #F8F6F0;
+  --char: #2C2C2C;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'PingFang SC','Microsoft YaHei',sans-serif;
+  background:linear-gradient(170deg, #f5f0e8 0%, #e8e3d5 50%, #dfd9cb 100%);
+  min-height:100vh;
+  color:var(--char);
+}
+
+/* ── 顶部 ── */
+.hero{
+  background:linear-gradient(135deg, #1A7B6B 0%, #0d5e52 100%);
+  color:#fff;
+  padding:40px 20px 36px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  bottom:-1px;left:0;right:0;
+  height:24px;
+  background:linear-gradient(170deg, #f5f0e8 0%, #e8e3d5 100%);
+  clip-path:ellipse(55% 100% at 50% 100%);
+}
+.hero-badge{
+  display:inline-block;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:20px;
+  padding:4px 16px;
+  font-size:0.78rem;
+  letter-spacing:2px;
+  margin-bottom:14px;
+}
+.hero h1{
+  font-family:'Noto Serif SC','STSong',serif;
+  font-size:1.7rem;
+  font-weight:900;
+  letter-spacing:3px;
+  margin-bottom:6px;
+}
+.hero .sub{
+  font-size:0.9rem;
+  opacity:0.8;
+  letter-spacing:1px;
+}
+
+/* ── 卡片区 ── */
+.container{
+  max-width:480px;
+  margin:0 auto;
+  padding:20px 16px 40px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:22px 20px;
+  box-shadow:0 2px 16px rgba(0,0,0,0.05);
+  display:flex;
+  align-items:center;
+  gap:16px;
+  text-decoration:none;
+  color:var(--char);
+  transition:all 0.18s;
+  border:1px solid transparent;
+  position:relative;
+  overflow:hidden;
+}
+.card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 28px rgba(0,0,0,0.1);
+  border-color:var(--gold);
+}
+.card:active{transform:scale(0.985)}
+.card .icon-wrap{
+  width:56px;height:56px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.7rem;
+  flex-shrink:0;
+}
+.icon-web{background:#FFF8E1}
+.icon-pdf{background:#FFEBEE}
+.icon-word{background:#E3F2FD}
+.card .body{flex:1;min-width:0}
+.card .body .title{
+  font-size:1.05rem;
+  font-weight:700;
+  margin-bottom:3px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.card .body .desc{font-size:0.78rem;color:#999}
+.card .arrow{color:var(--gold);font-size:1.3rem;flex-shrink:0;opacity:0.5;transition:opacity 0.18s}
+.card:hover .arrow{opacity:1}
+
+.tag{
+  display:inline-block;
+  background:var(--gold);
+  color:#fff;
+  font-size:0.65rem;
+  padding:1px 8px;
+  border-radius:10px;
+  font-weight:500;
+  letter-spacing:1px;
+}
+
+/* ── 底部 ── */
+.footer{
+  text-align:center;
+  padding:20px 20px 36px;
+  font-size:0.72rem;
+  color:#bbb;
+  line-height:1.8;
+}
+.footer strong{color:var(--tq)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">公办高校 · 权威认证</div>
+  <h1>广师大AIGC职业技能培训</h1>
+  <div class="sub">招生简章 · 大折页10页版</div>
+</div>
+
+<div class="container">
+  <!-- 在线预览 -->
+  <a class="card" href="brochure.html" target="_blank">
+    <div class="icon-wrap icon-web">🌐</div>
+    <div class="body">
+      <div class="title">在线预览 <span class="tag">推荐</span></div>
+      <div class="desc">大折页网页版 · 手机/电脑均可浏览</div>
+    </div>
+    <div class="arrow">→</div>
+  </a>
+
+  <!-- PDF下载 -->
+  <a class="card" href="广师大AIGC职业技能培训招生简章_大折页_V2.pdf" download>
+    <div class="icon-wrap icon-pdf">📄</div>
+    <div class="body">
+      <div class="title">PDF 下载</div>
+      <div class="desc">609KB · 可直接打印 · 排版不变形</div>
+    </div>
+    <div class="arrow">↓</div>
+  </a>
+
+  <!-- Word下载 -->
+  <a class="card" href="广师大AIGC职业技能培训招生简章_大折页_V2.docx" download>
+    <div class="icon-wrap icon-word">📝</div>
+    <div class="body">
+      <div class="title">Word 下载</div>
+      <div class="desc">18KB · 可编辑 · 支持二次排版</div>
+    </div>
+    <div class="arrow">↓</div>
+  </a>
+</div>
+
+<div class="footer">
+  <strong>广东技术师范大学</strong> 主办 · 华树集团 编制<br>
+  咨询电话：400-885-6216
+</div>
+
+</body>
+</html>
